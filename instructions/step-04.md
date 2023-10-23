@@ -1,8 +1,8 @@
-#Testing your cluster
+# Testing your cluster
 
 RKE1 now created a new Kubernetes cluster. In order to interact with its API, we can use the Kubernetes CLI `kubectl`.
 
-##Run the following commands on the victim VM
+## un the following commands on the victim VM
 
 To install `kubectl` run:
 
@@ -34,16 +34,12 @@ In order to test that we can properly interact with our cluster, we can execute 
 
 To list all the nodes in the cluster and check their status:
 
-```
-kubectl get nodes
-```
+```kubectl get nodes```
 
 The cluster should have one node, and the status should be "Ready".
 
 To list all the Pods in all Namespaces of the cluster:
 
-```
-kubectl get pods --all-namespaces
-```
+```kubectl get pods --all-namespaces```
 
 All Pods other than helm should have the status "Running".

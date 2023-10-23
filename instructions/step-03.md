@@ -1,8 +1,8 @@
-#Create a Kubernetes cluster
+# Create a Kubernetes cluster
 
 Next, lets create a Kubernetes cluster using the RKE1 distribution.
 
-##Run the following commands on the victim VM.
+## Run the following commands on the victim VM.
 
 To start out, we will generate a new SSH Keypair and place this keypair on the node we will install Kubernetes onto. As we will be using the victim node to run Kubernetes, we will simply copy the public key into the authorized_keys file of this node.
 
